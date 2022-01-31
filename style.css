@@ -1,39 +1,38 @@
-/* Tablet Landscape */
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+  }
 
-@media screen and (max-width: 1060px) {
-    #primary {
-        width: 67%;
-    }
-    #secondary {
-        width: 30%;
-        margin-left: 3%;
-    }
-}
-
-
-/* Tabled Portrait */
-
-@media screen and (max-width: 768px) {
-    #primary {
-        width: 100%;
-    }
-    #secondary {
-        width: 100%;
-        margin: 0;
-        border: none;
-    }
-}
-
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
 body {
-    background: #f85032;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e73827, #f85032);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e73827, #f85032);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: var(--bg);
+  }
+
+ul {
+    font-family: helvetica;
 }
 
-h1 {
-    background-color: purple;
-    text-align: center;
-}
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
+
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+  }
